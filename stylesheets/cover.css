@@ -40,11 +40,11 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
 .Profile img {
     margin: 0px 0.75em 0.5em 0px;
     padding: 2px;
-    background: none repeat scroll 0% 0% #FFF;
+    background: none repeat scroll 0% 0% #eee;
     border: 1px solid #EEE;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);	
 }
-.footer_github img {
+.footer_github {
   background-attachment: scroll !important;
   background-clip: border-box !important;
   background-color: rgba(0, 0, 0, 0);
