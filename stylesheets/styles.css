@@ -327,7 +327,7 @@ footer {
     border: 1px solid #EEE;
     box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);	
 }
-.footer_github {
+.footer_github img {
   background-attachment: scroll !important;
   background-clip: border-box !important;
   background-color: rgba(0, 0, 0, 0);
