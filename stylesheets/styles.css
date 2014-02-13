@@ -320,20 +320,3 @@ footer {
 .type-csharp .highlight .nn{color:#000000}
 .type-csharp .highlight .s{color:#A31515}
 .type-csharp .highlight .sc{color:#A31515}
-.Profile img {
-    margin: 0px 0.75em 0.5em 0px;
-    padding: 2px;
-    background: none repeat scroll 0% 0% #FFF;
-    border: 1px solid #EEE;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);	
-}
-.footer_github img {
-  background-attachment: scroll !important;
-  background-clip: border-box !important;
-  background-color: rgba(0, 0, 0, 0);
-  background-position: 0 0 !important;
-  background-repeat: repeat !important;
-  background-size: auto auto !important;
-  border: medium none !important;
-  height: 30px;
-}
