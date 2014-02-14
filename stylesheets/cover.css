@@ -27,7 +27,7 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
 .cover .btn-lg{padding:10px 20px;font-weight:bold;}
 .mastfoot{color:#999;color:rgba(255,255,255,.5);}
 @media (min-width:768px){.masthead{position:fixed;top:0;}
-.mastfoot{position:fixed;bottom:0;}
+.mastfoot{position:relative;bottom:0;}
 .site-wrapper-inner{vertical-align:middle;}
 .masthead,
 .mastfoot,
