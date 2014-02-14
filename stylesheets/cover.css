@@ -62,3 +62,8 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
   padding: 0 !important;
   opacity: 0.9 !important;
 }
+#widget-div {
+  max-width: 280px !important;
+  padding-top: 5px !important;
+  width: 280px !important;
+}
