@@ -46,7 +46,8 @@
     </div></div>				
         <h1>Mehdi's Blog</h1>
 		<div class="inner">				
-        <p><div class="g-post" data-href="https://plus.google.com/117836125312540277989/posts/YLasftu9ut9"></div></p>
+        <p><a href="#" onClick="renderWidget();">Blog: Moving to GitHub</a>
+        <div id="widget-div"></div></p>
         <p><a href="https://plus.google.com/u/0/117836125312540277989?rel=author" class="btn btn-primary btn-lg" role="button">Google+ Profile »</a></p>		
           <div class="mastfoot">
             <div class="inner">
@@ -62,12 +63,13 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <script src="javascripts/docs.min.js"></script>
-<script type="text/javascript">
-  (function() {
-    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-    po.src = 'https://apis.google.com/js/plusone.js?onload=onLoadCallback';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-  })();
-</script>	
+    <script type="text/javascript" src="https://apis.google.com/js/plusone.js">
+      {"parsetags": "explicit"}
+    </script>
+    <script type="text/javascript">
+      function renderWidget() {
+        gapi.post.render("widget-div", {'href' : 'https://plus.google.com/117836125312540277989/posts/YLasftu9ut9'} );
+      }
+    </script>	
   </body>
 </html>

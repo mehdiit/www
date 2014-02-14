@@ -62,22 +62,3 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
   padding: 0 !important;
   opacity: 0.9 !important;
 }
-.ve {
-  background-color: #808080 !important;
-  border-radius: 0 !important;
-}
-.v2 {
-  border-bottom: medium none !important;
-  display: none !important;
-}
-.dn {
-  color: #FFFFFF !important;
-  font-weight: bold !important;
-}
-.r3c .Ee {
-  border-bottom-width: 0 !important;
-  border-top-width: 0 !important;
-}
-.Ee {
-  border-width: 0 !important;
-}
