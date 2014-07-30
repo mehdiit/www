@@ -46,11 +46,11 @@
 </script>
 <script>
 function run(interval, frames) {
-    var int = 1;    
+    var int = 2;    
     function func() {
         document.body.id = "mbg"+int;
         int++;
-        if(int === frames) { int = 1; }
+        if(int === frames) { int = 2; }
     }   
     var swap = window.setInterval(func, interval);
 }
