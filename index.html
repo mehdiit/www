@@ -43,6 +43,18 @@
 
   ga('create', 'UA-25246690-1', 'mehdi.it');
   ga('send', 'pageview');
+</script>
+<script>
+function run(interval, frames) {
+    var int = 1;    
+    function func() {
+        document.body.id = "mbg"+int;
+        int++;
+        if(int === frames) { int = 1; }
+    }   
+    var swap = window.setInterval(func, interval);
+}
+run(1000, 10);
 </script>	
   </body>
 </html>
