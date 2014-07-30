@@ -6,7 +6,7 @@ a:hover{color:#fff;}
 .btn-default:focus{color:#333;text-shadow:none;background-color:#fff;border:1px solid #fff;}
 html,
 body{
-  background: url(http://mehdi.it/imagesbg/0.jpg) no-repeat center center fixed;
+  background: url(http://mehdi.it/images/bg/0.jpg) no-repeat center center fixed;
   height: 100%;  
   -webkit-background-size: cover;  
   -moz-background-size: cover;  
@@ -81,7 +81,7 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
   position: fixed;
 }
 #mbg1 { 
-  background: url(http://mehdi.it/imagesbg/1.jpg) no-repeat center center fixed;
+  background: url(http://mehdi.it/images/bg/1.jpg) no-repeat center center fixed;
   height: 100%;  
   -webkit-background-size: cover;  
   -moz-background-size: cover;  
@@ -91,7 +91,7 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
 }
 #mbg2 { 
-  background: url(http://mehdi.it/imagesbg/2.jpg) no-repeat center center fixed;
+  background: url(http://mehdi.it/images/bg/2.jpg) no-repeat center center fixed;
   height: 100%;  
   -webkit-background-size: cover;  
   -moz-background-size: cover;  
@@ -101,7 +101,7 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
 }
 #mbg3 { 
-  background: url(http://mehdi.it/imagesbg/3.jpg) no-repeat center center fixed;
+  background: url(http://mehdi.it/images/bg/3.jpg) no-repeat center center fixed;
   height: 100%;  
   -webkit-background-size: cover;  
   -moz-background-size: cover;  
@@ -111,7 +111,7 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
 }
 #mbg4 { 
-  background: url(http://mehdi.it/imagesbg/4.jpg) no-repeat center center fixed;
+  background: url(http://mehdi.it/images/bg/4.jpg) no-repeat center center fixed;
   height: 100%;  
   -webkit-background-size: cover;  
   -moz-background-size: cover;  
@@ -121,7 +121,7 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
 }
 #mbg5 { 
-  background: url(http://mehdi.it/imagesbg/5.jpg) no-repeat center center fixed;
+  background: url(http://mehdi.it/images/bg/5.jpg) no-repeat center center fixed;
   height: 100%;  
   -webkit-background-size: cover;  
   -moz-background-size: cover;  
@@ -131,7 +131,7 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
 }
 #mbg6 { 
-  background: url(http://mehdi.it/imagesbg/6.jpg) no-repeat center center fixed;
+  background: url(http://mehdi.it/images/bg/6.jpg) no-repeat center center fixed;
   height: 100%;  
   -webkit-background-size: cover;  
   -moz-background-size: cover;  
@@ -141,7 +141,7 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
 }
 #mbg7 { 
-  background: url(http://mehdi.it/imagesbg/7.jpg) no-repeat center center fixed;
+  background: url(http://mehdi.it/images/bg/7.jpg) no-repeat center center fixed;
   height: 100%;  
   -webkit-background-size: cover;  
   -moz-background-size: cover;  
@@ -151,7 +151,7 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
 }
 #mbg8 { 
-  background: url(http://mehdi.it/imagesbg/8.jpg) no-repeat center center fixed;
+  background: url(http://mehdi.it/images/bg/8.jpg) no-repeat center center fixed;
   height: 100%;  
   -webkit-background-size: cover;  
   -moz-background-size: cover;  
@@ -161,7 +161,7 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
 }
 #mbg9 { 
-  background: url(http://mehdi.it/imagesbg/9.jpg) no-repeat center center fixed;
+  background: url(http://mehdi.it/images/bg/9.jpg) no-repeat center center fixed;
   height: 100%;  
   -webkit-background-size: cover;  
   -moz-background-size: cover;  
@@ -171,7 +171,7 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
 }
 #mbg10 { 
-  background: url(http://mehdi.it/imagesbg/10.jpg) no-repeat center center fixed;
+  background: url(http://mehdi.it/images/bg/10.jpg) no-repeat center center fixed;
   height: 100%;  
   -webkit-background-size: cover;  
   -moz-background-size: cover;  
