@@ -6,8 +6,14 @@ a:hover{color:#fff;}
 .btn-default:focus{color:#333;text-shadow:none;background-color:#fff;border:1px solid #fff;}
 html,
 body{
-  background: #000000;
+  background: url(http://mehdi.it/imagesbg/0.jpg) no-repeat center center fixed;
   height: 100%;  
+  -webkit-background-size: cover;  
+  -moz-background-size: cover;  
+  -o-background-size: cover;  
+  background-size: cover;  
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://mehdi.it/images/bg.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale');  
   }   
 body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shadow:0;}
 .site-wrapper{display:table;width:100%;height:100%;min-height:100%;}
@@ -74,13 +80,103 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
   bottom: 2px;
   position: fixed;
 }
-#mbg1 { background: hsl(0, 50%, 50%); }
-#mbg2 { background: hsl(30, 50%, 50%); }
-#mbg3 { background: hsl(60, 50%, 50%); }
-#mbg4 { background: hsl(90, 50%, 50%); }
-#mbg5 { background: hsl(120, 50%, 50%); }
-#mbg6 { background: hsl(150, 50%, 50%); }
-#mbg7 { background: hsl(180, 50%, 50%); }
-#mbg8 { background: hsl(210, 50%, 50%); }
-#mbg9 { background: hsl(240, 50%, 50%); }
-#mbg10 { background: hsl(270, 50%, 50%); }
+#mbg1 { 
+  background: url(http://mehdi.it/imagesbg/1.jpg) no-repeat center center fixed;
+  height: 100%;  
+  -webkit-background-size: cover;  
+  -moz-background-size: cover;  
+  -o-background-size: cover;  
+  background-size: cover;  
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://mehdi.it/images/bg.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
+}
+#mbg2 { 
+  background: url(http://mehdi.it/imagesbg/2.jpg) no-repeat center center fixed;
+  height: 100%;  
+  -webkit-background-size: cover;  
+  -moz-background-size: cover;  
+  -o-background-size: cover;  
+  background-size: cover;  
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://mehdi.it/images/bg.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
+}
+#mbg3 { 
+  background: url(http://mehdi.it/imagesbg/3.jpg) no-repeat center center fixed;
+  height: 100%;  
+  -webkit-background-size: cover;  
+  -moz-background-size: cover;  
+  -o-background-size: cover;  
+  background-size: cover;  
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://mehdi.it/images/bg.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
+}
+#mbg4 { 
+  background: url(http://mehdi.it/imagesbg/4.jpg) no-repeat center center fixed;
+  height: 100%;  
+  -webkit-background-size: cover;  
+  -moz-background-size: cover;  
+  -o-background-size: cover;  
+  background-size: cover;  
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://mehdi.it/images/bg.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
+}
+#mbg5 { 
+  background: url(http://mehdi.it/imagesbg/5.jpg) no-repeat center center fixed;
+  height: 100%;  
+  -webkit-background-size: cover;  
+  -moz-background-size: cover;  
+  -o-background-size: cover;  
+  background-size: cover;  
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://mehdi.it/images/bg.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
+}
+#mbg6 { 
+  background: url(http://mehdi.it/imagesbg/6.jpg) no-repeat center center fixed;
+  height: 100%;  
+  -webkit-background-size: cover;  
+  -moz-background-size: cover;  
+  -o-background-size: cover;  
+  background-size: cover;  
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://mehdi.it/images/bg.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
+}
+#mbg7 { 
+  background: url(http://mehdi.it/imagesbg/7.jpg) no-repeat center center fixed;
+  height: 100%;  
+  -webkit-background-size: cover;  
+  -moz-background-size: cover;  
+  -o-background-size: cover;  
+  background-size: cover;  
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://mehdi.it/images/bg.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
+}
+#mbg8 { 
+  background: url(http://mehdi.it/imagesbg/8.jpg) no-repeat center center fixed;
+  height: 100%;  
+  -webkit-background-size: cover;  
+  -moz-background-size: cover;  
+  -o-background-size: cover;  
+  background-size: cover;  
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://mehdi.it/images/bg.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
+}
+#mbg9 { 
+  background: url(http://mehdi.it/imagesbg/9.jpg) no-repeat center center fixed;
+  height: 100%;  
+  -webkit-background-size: cover;  
+  -moz-background-size: cover;  
+  -o-background-size: cover;  
+  background-size: cover;  
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://mehdi.it/images/bg.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
+}
+#mbg10 { 
+  background: url(http://mehdi.it/imagesbg/10.jpg) no-repeat center center fixed;
+  height: 100%;  
+  -webkit-background-size: cover;  
+  -moz-background-size: cover;  
+  -o-background-size: cover;  
+  background-size: cover;  
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://mehdi.it/images/bg.jpg', sizingMethod='scale')";
+  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='.http://mehdi.it/images/bg.jpg', sizingMethod='scale'); 
+}
