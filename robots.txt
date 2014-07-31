@@ -1,4 +1,8 @@
-User-agent: ia_archiver
-Disallow: /
 User-agent: *
-Disallow:
+Disallow: /
+User-agent: Googlebot
+Allow: /
+User-agent: Yahoo-slurp
+Allow: /
+User-agent: Msnbot
+Allow: /
