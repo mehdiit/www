@@ -12,6 +12,7 @@ body {background:#000000;}
 <canvas style="position:absolute; top:0; left:0;" id="canvas" width="696" height="215"></canvas>
 <div style="display:none;" id="buffer">
 <script>
+
 var camera = {
 	focus : 400,
 	self : {
@@ -271,7 +272,7 @@ vertex3d.prototype = {
 		
 		this.degree = new Array();
 		this.freeDegreeSpeed = new Array();
-		for(var j=0; j&lt;this.particleNum; j++) {
+		for(var j=0; j<this.particleNum; j++) {
 			this.degree[j] = {theta:0, phi:0};
 			this.freeDegreeSpeed[j] = {theta:1*Math.random()-0.5, phi:1*Math.random()-0.5};
 		};
@@ -280,7 +281,7 @@ vertex3d.prototype = {
 			var buffer = document.getElementById(i).getContext("2d").getImageData(0, 0, 100, 100).data;
 			this.charsMap[i] = new Array();
 			var self = this;
-			for(var j=0; j&lt;this.particleNum; j++) {
+			for(var j=0; j<this.particleNum; j++) {
 				var redo = function() {
 					var theta = Math.floor(Math.random()*100);
 					var phi = Math.floor(Math.random()*100);
@@ -299,23 +300,23 @@ vertex3d.prototype = {
 			};
 		};
 		this.charsMap["@"] = new Array();
-		for(var i=0; i&lt;this.particleNum; i++) {
+		for(var i=0; i<this.particleNum; i++) {
 			this.charsMap["@"][i] = {theta:360*Math.random(), phi:360*Math.random()};
 		};
 		this.charsMap["_"] = new Array();
-		for(var i=0; i&lt;this.particleNum; i++) {
+		for(var i=0; i<this.particleNum; i++) {
 			this.charsMap["_"][i] = {theta:0, phi:0};
 		};
 		
 		this.veticies = new Array();
-		for(var i=0; i&lt;this.particleNum; i++) {
+		for(var i=0; i<this.particleNum; i++) {
 			this.veticies[i] = new vertex3d({});
 		};
 	};
 	sphere.prototype = {
 		update : function() {
-			for(var i=0; i&lt;this.charsMap[this.type].length; i++) {
-				if(this.degree[i].theta &gt;= 30 &amp;&amp; this.degree[i].phi &gt;= 30) {
+			for(var i=0; i<this.charsMap[this.type].length; i++) {
+				if(this.degree[i].theta >= 30 && this.degree[i].phi >= 30) {
 					this.flag = true;
 					break;
 				} else {
@@ -326,7 +327,7 @@ vertex3d.prototype = {
 			this.center.x = this.center.x + (this.targetCenter.x - this.center.x) / 8;
 			this.center.y = this.center.y + (this.targetCenter.y - this.center.y) / 8;
 			this.center.z = this.center.z + (this.targetCenter.z - this.center.z) / 8;
-			for(var i=0; i&lt;this.charsMap[this.type].length; i++) {
+			for(var i=0; i<this.charsMap[this.type].length; i++) {
 				if(this.type === "@") {
 					this.charsMap[this.type][i].theta += this.freeDegreeSpeed[i].theta;
 					this.charsMap[this.type][i].phi += this.freeDegreeSpeed[i].phi;
@@ -355,14 +356,14 @@ vertex3d.prototype = {
 		draw : function() {
 			if(this.flag == true) {
 				ctx.beginPath();
-				for(var i=0; i&lt;this.veticies.length; i++) {
-					for(var j=i; j&lt;this.veticies.length; j++) {
+				for(var i=0; i<this.veticies.length; i++) {
+					for(var j=i; j<this.veticies.length; j++) {
 						
 						var distance = 
 						(this.veticies[i].affineOut.x-this.veticies[j].affineOut.x)*(this.veticies[i].affineOut.x-this.veticies[j].affineOut.x) +
 						(this.veticies[i].affineOut.y-this.veticies[j].affineOut.y)*(this.veticies[i].affineOut.y-this.veticies[j].affineOut.y);
 						
-						if(distance &lt;= this.radius*3) {
+						if(distance <= this.radius*3) {
 							ctx.moveTo(
 								this.veticies[i].affineOut.x,
 								this.veticies[i].affineOut.y
@@ -384,19 +385,19 @@ vertex3d.prototype = {
 	var s = new Array();
 	/*-----------------------------------------------------*/
 	var setup = function() {
-		for(var i=0; i&lt;sphereNum; i++) {
+		for(var i=0; i<sphereNum; i++) {
 			s[i] = new sphere({radius:100, particleNum:250, center:{x:70*i - (sphereNum-1)*70/2,y:0,z:0}});
 		};
 	};
 	/*-----------------------------------------------------*/
 	var update = function() {
-		for(var i=0; i&lt;sphereNum; i++) {
+		for(var i=0; i<sphereNum; i++) {
 			s[i].update();
 		};
 	};
 	/*-----------------------------------------------------*/
 	var draw = function() {
-		for(var i=0; i&lt;sphereNum; i++) {
+		for(var i=0; i<sphereNum; i++) {
 			s[i].draw();
 		};
 	};
@@ -477,7 +478,7 @@ vertex3d.prototype = {
 		var changeIncrement = 0;
 		var charNum = text.length;
 		var center = new Array();
-		for(var i=0; i&lt;charNum; i++) {
+		for(var i=0; i<charNum; i++) {
 			center[i] = {x:sphereSpace*i - sphereSpace*(charNum-1)/2, y:0, z:0};
 		};
 		var changer = function() {
@@ -486,12 +487,12 @@ vertex3d.prototype = {
 				s[changeIncrement].targetCenter = center[changeIncrement]; 
 				s[changeIncrement].targetRadius = sphereRadius; 
 				changeIncrement++;
-				if(changeIncrement &lt; charNum) {
+				if(changeIncrement < charNum) {
 					changer();
 				};
 			}, unitTime);
 		};
-		for(var i=charNum; i&lt;s.length; i++) {
+		for(var i=charNum; i<s.length; i++) {
 			s[i].type = "_";
 		};
 		changer();
@@ -502,7 +503,7 @@ vertex3d.prototype = {
 		var col = 10;
 		var colUnit = 80;
 		var rowUnit = 120;
-		for(var i=0; i&lt;alpha.length; i++) {
+		for(var i=0; i<alpha.length; i++) {
 			s[i].targetCenter = {
 				x:(i%10)*colUnit - (col-1)*colUnit/2,
 				y:Math.floor(i/10)*-rowUnit + 180,
@@ -549,12 +550,12 @@ vertex3d.prototype = {
 	var start = function() {
 		setup();
 		setInterval(function() {
-			if(vibrateCV.execution() &gt; 0.8) {
+			if(vibrateCV.execution() > 0.8) {
 				vibrateFlag = true;
 			} else {
 				vibrateFlag = false;
 			};
-			if(invertCV.execution() &gt; 0.7) {
+			if(invertCV.execution() > 0.7) {
 				strokeColor = "rgba(0,0,0,0.1)";
 				backgroundColor = "rgba(255,255,255,1)";
 			} else {
@@ -575,7 +576,28 @@ vertex3d.prototype = {
 	camera.rotate.y = e.pageX/window.innerWidth * 180 - 90;
 	document.onmousedown = function() {camera.zoom = Math.random()*1+1};
 	document.onmouseup = function() {camera.zoom = 1};
-};//@ sourceURL=pen.js
+};
 </script>
-<script src="http://mehdi.it/javascripts/live_pen_remember_scroll.js"></script><canvas id="0"></canvas><canvas id="1"></canvas><canvas id="2"></canvas><canvas id="3"></canvas><canvas id="4"></canvas><canvas id="5"></canvas><canvas id="6"></canvas><canvas id="7"></canvas><canvas id="8"></canvas><canvas id="9"></canvas><canvas id="A"></canvas><canvas id="B"></canvas><canvas id="C"></canvas><canvas id="D"></canvas><canvas id="E"></canvas><canvas id="F"></canvas><canvas id="G"></canvas><canvas id="H"></canvas><canvas id="I"></canvas><canvas id="J"></canvas><canvas id="K"></canvas><canvas id="L"></canvas><canvas id="M"></canvas><canvas id="N"></canvas><canvas id="O"></canvas><canvas id="P"></canvas><canvas id="Q"></canvas><canvas id="R"></canvas><canvas id="S"></canvas><canvas id="T"></canvas><canvas id="U"></canvas><canvas id="V"></canvas><canvas id="W"></canvas><canvas id="X"></canvas><canvas id="Y"></canvas><canvas id="Z"></canvas><canvas id="!"></canvas><canvas id="?"></canvas>
-</div></body></html>
+<script src="http://mehdi.it/javascripts/live_pen_remember_scroll.js"></script>
+<canvas id="0"></canvas><canvas id="1"></canvas>
+<canvas id="2"></canvas><canvas id="3"></canvas>
+<canvas id="4"></canvas><canvas id="5"></canvas>
+<canvas id="6"></canvas><canvas id="7"></canvas>
+<canvas id="8"></canvas><canvas id="9"></canvas>
+<canvas id="A"></canvas><canvas id="B"></canvas>
+<canvas id="C"></canvas><canvas id="D"></canvas>
+<canvas id="E"></canvas><canvas id="F"></canvas>
+<canvas id="G"></canvas><canvas id="H"></canvas>
+<canvas id="I"></canvas><canvas id="J"></canvas>
+<canvas id="K"></canvas><canvas id="L"></canvas>
+<canvas id="M"></canvas><canvas id="N"></canvas>
+<canvas id="O"></canvas><canvas id="P"></canvas>
+<canvas id="Q"></canvas><canvas id="R"></canvas>
+<canvas id="S"></canvas><canvas id="T"></canvas>
+<canvas id="U"></canvas><canvas id="V"></canvas>
+<canvas id="W"></canvas><canvas id="X"></canvas>
+<canvas id="Y"></canvas><canvas id="Z"></canvas>
+<canvas id="!"></canvas><canvas id="?"></canvas>
+</div>
+</body>
+</html>
