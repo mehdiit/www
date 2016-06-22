@@ -83,6 +83,7 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
 #container {
   position:fixed;
   height: 100%;  
+  width: 100%;
   -webkit-background-size: cover;  
   -moz-background-size: cover;  
   -o-background-size: cover;  
@@ -91,7 +92,8 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
 #container img {
   position:absolute;
   left:0;
-  height: 100%;  
+  height: 100%; 
+  width: 100%;  
   -webkit-background-size: cover;  
   -moz-background-size: cover;  
   -o-background-size: cover;  
