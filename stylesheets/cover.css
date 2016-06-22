@@ -81,9 +81,12 @@ body{color:#fff;text-align:center;text-shadow:0 1px 3px rgba(0,0,0,.5);box-shado
   position: fixed;
 }
 #container {
-  position:relative;
-  height:610px;
-  width:610px;
+  position:fixed;
+  height: 100%;  
+  -webkit-background-size: cover;  
+  -moz-background-size: cover;  
+  -o-background-size: cover;  
+  background-size: cover;  
 }
 #container img {
   position:absolute;
