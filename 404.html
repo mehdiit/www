@@ -1,29 +1,74 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>mehdi.it | 404 Not Found</title>
-	<link rel="canonical" href="http://mehdi.it"/>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <h1>Page Not Found!</h1>  
-    <p>Please visit the <a href="https://mehdit.it">Home Page</a></p>
-    <script>window.location.replace("https://mehdi.it");</script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-25246690-1', 'mehdi.it');
-  ga('send', 'pageview');
-
-</script>	
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehdi.it | 404 Not Found</title>
+    <meta name="description" content="Oops! The page you were looking for could not be found. Please return to the homepage to continue exploring.">
+    <link rel="canonical" href="https://mehdi.it">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes floating-shape-1 {
+            0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+            25% { transform: translate(20%, 30%) scale(1.1) rotate(45deg); }
+            50% { transform: translate(-10%, 40%) scale(0.9) rotate(90deg); }
+            75% { transform: translate(30%, -10%) scale(1.2) rotate(135deg); }
+        }
+        @keyframes floating-shape-2 {
+            0%, 100% { transform: translate(0, 0) scale(1) rotate(0deg); }
+            25% { transform: translate(-30%, -20%) scale(0.9) rotate(-30deg); }
+            50% { transform: translate(20%, -40%) scale(1.1) rotate(-60deg); }
+            75% { transform: translate(-10%, 30%) scale(0.8) rotate(-90deg); }
+        }
+        .animated-bg::before, .animated-bg::after {
+            content: '';
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+        }
+        .animated-bg::before {
+            top: 10%;
+            left: 10%;
+            width: 70vh;
+            height: 70vh;
+            background: rgba(140, 140, 140, .4);
+            animation: floating-shape-1 25s infinite ease-in-out;
+        }
+        .animated-bg::after {
+            bottom: 10%;
+            right: 10%;
+            width: 50vh;
+            height: 50vh;
+            background: rgba(100, 100, 100, .4);
+            animation: floating-shape-2 20s infinite ease-in-out alternate;
+        }
+        body {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white font-sans antialiased">
+    <div class="animated-bg absolute inset-0 w-full h-full z-0"></div>
+    <div class="relative min-h-screen w-full flex flex-col justify-center items-center p-4 z-10">
+        <main class="bg-gray-800 bg-opacity-50 backdrop-filter backdrop-blur-md rounded-xl p-8 md:p-12 text-center max-w-lg w-full shadow-2xl transition-all duration-500 ease-in-out">
+            <h1 class="text-6xl md:text-8xl font-extrabold mb-4 drop-shadow-lg text-gray-100">404</h1>
+            <h2 class="text-xl md:text-3xl font-bold mb-4 text-gray-200">Page Not Found</h2>
+            <p class="text-lg md:text-xl text-gray-300 mb-8 font-light">
+                Oops! Looks like this page went on a vacation.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+                <a href="/" class="inline-block px-8 py-3 rounded-full text-lg font-semibold bg-gray-700 text-gray-100 shadow-md hover:bg-gray-600 transition-colors duration-300">
+                    Go to Homepage
+                </a>
+            </div>
+        </main>
+        <footer class="mt-8 text-gray-500 text-sm font-light">
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-2">
+                <span class="text-center">&copy; 2010-2025 mehdi.it</span>
+                <span class="hidden sm:inline-block">|</span>
+                <a href="https://www.buymeacoffee.com/mehdih" target="_blank" class="hover:text-gray-400 transition-colors duration-300">Buy me a coffee</a>
+            </div>
+        </footer>
+    </div>
+</body>
 </html>
