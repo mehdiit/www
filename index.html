@@ -39,7 +39,7 @@
     <div id="contactModal" class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center p-4 z-50 hidden">
         <div class="relative bg-gray-900 rounded-lg shadow-xl w-full max-w-xl h-full max-h-[80vh] flex flex-col">
             <button id="closeModalBtn" class="absolute top-2 right-2 text-gray-400 hover:text-white text-3xl font-bold p-2 leading-none">&times;</button>
-            <iframe id="contactFormIframe" src="https://docs.google.com/forms/d/1NLTGPOg11QdO4UgSeALB5IKX97uxOPmCHbiiuW14Utk/viewform?embedded=true" class="w-full h-full rounded-b-lg" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <iframe id="contactFormIframe" data-src="https://docs.google.com/forms/d/1NLTGPOg11QdO4UgSeALB5IKX97uxOPmCHbiiuW14Utk/viewform?embedded=true" class="w-full h-full rounded-b-lg" frameborder="0" marginheight="0" marginwidth="0"></iframe>
         </div>
     </div>
     <script>
@@ -50,6 +50,9 @@
 
         contactBtn.addEventListener('click', () => {
             contactModal.classList.remove('hidden');
+            if (!contactFormIframe.src) {
+                contactFormIframe.src = contactFormIframe.dataset.src;
+            }
         });
 
         closeModalBtn.addEventListener('click', () => {
